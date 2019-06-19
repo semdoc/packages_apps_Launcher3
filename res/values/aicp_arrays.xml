@@ -130,4 +130,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <item>overthetop</item>
     </string-array>
 
+    <string-array translatable="false" name="welcome_message_variants">
+        <item>@string/quick_event_rom_intro_title1</item>
+        <item>@string/quick_event_rom_intro_title2</item>
+        <item>@string/quick_event_rom_intro_title3</item>
+        <item>@string/quick_event_rom_intro_title4</item>
+        <item>@string/quick_event_rom_intro_title5</item>
+    </string-array>
+
 </resources>

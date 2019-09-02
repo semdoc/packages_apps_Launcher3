@@ -134,6 +134,14 @@ public class Homescreen extends SettingsActivity implements PreferenceFragment.O
                     return true;
                 }
             });
+
+            SwitchPreference quickspacePSonality = (SwitchPreference) findPreference(Utilities.KEY_SHOW_QUICKSPACE_PSONALITY);
+            quickspacePSonality.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
+                    LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                    return true;
+                }
+            });
         }
 
         /**

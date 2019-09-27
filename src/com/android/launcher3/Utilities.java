@@ -128,6 +128,8 @@ public final class Utilities {
     private static final long WAIT_BEFORE_RESTART = 250;
 
     public static final String KEY_SHOW_SEARCHBAR = "pref_show_quickspace";
+    public static final String KEY_NOTIFICATION_GESTURE = "pref_notification_gesture";
+    public static final String KEY_DT_GESTURE = "pref_dt_gesture";
 
     /**
      * Indicates if the device has a debug build. Should only be used to store additional info or
@@ -700,6 +702,16 @@ public final class Utilities {
     public static boolean showQSB(Context context) {
         SharedPreferences prefs = getPrefs(context.getApplicationContext());
         return prefs.getBoolean(KEY_SHOW_SEARCHBAR, true);
+    }
+
+    public static boolean isNotificationGestureEnabled(Context context) {
+        SharedPreferences prefs = getPrefs(context.getApplicationContext());
+        return prefs.getBoolean(KEY_NOTIFICATION_GESTURE, true);
+    }
+
+    public static boolean isDoubleTapGestureEnabled(Context context) {
+        SharedPreferences prefs = getPrefs(context.getApplicationContext());
+        return prefs.getBoolean(KEY_DT_GESTURE, true);
     }
 
     public static void restart(final Context context) {

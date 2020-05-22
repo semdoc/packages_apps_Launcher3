@@ -128,7 +128,7 @@ public class QuickEventsController {
         mEventTitleSubAction = new OnClickListener() {
             @Override
             public void onClick(View view) {
-                final Intent intent = new Intent(Intent.ACTION_MAIN).setClassName("com.android.settings","com.bootleggers.dumpster.fragments.BootlegWelcome")
+                final Intent intent = new Intent(Settings.ACTION_DEVICE_INTRODUCTION)
                         .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
                 try {
                     Launcher.getLauncher(mContext).startActivitySafely(view, intent, null, null);

@@ -73,10 +73,10 @@ public class Homescreen extends SettingsActivity
             case Utilities.KEY_SHOW_ALT_QUICKSPACE:
             case Utilities.KEY_SHOW_QUICKSPACE_NOWPLAYING:
             case Utilities.KEY_SHOW_QUICKSPACE_PSONALITY:
-            case Utilities.DATE_FORMAT_KEY:
-            case Utilities.DATE_STYLE_TRANSFORM:
-            case Utilities.DATE_STYLE_SPACING:
-            case Utilities.DATE_STYLE_FONT:
+            //case Utilities.DATE_FORMAT_KEY:
+            //case Utilities.DATE_STYLE_TRANSFORM:
+            //case Utilities.DATE_STYLE_SPACING:
+            //case Utilities.DATE_STYLE_FONT:
                 LauncherAppState.getInstanceNoCreate().setNeedsRestart();
                 break;
             default:

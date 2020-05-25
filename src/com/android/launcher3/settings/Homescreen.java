@@ -73,6 +73,10 @@ public class Homescreen extends SettingsActivity
             case Utilities.KEY_SHOW_ALT_QUICKSPACE:
             case Utilities.KEY_SHOW_QUICKSPACE_NOWPLAYING:
             case Utilities.KEY_SHOW_QUICKSPACE_PSONALITY:
+            case Utilities.DATE_FORMAT_KEY:
+            case Utilities.DATE_STYLE_TRANSFORM:
+            case Utilities.DATE_STYLE_SPACING:
+            case Utilities.DATE_STYLE_FONT:
                 LauncherAppState.getInstanceNoCreate().setNeedsRestart();
                 break;
             default:
@@ -135,7 +139,7 @@ public class Homescreen extends SettingsActivity
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
                     int index = dateFormat.findIndexOfValue((String) newValue);
                     dateFormat.setSummary(dateFormat.getEntries()[index]);
-                    LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                    //LauncherAppState.getInstanceNoCreate().setNeedsRestart();
                     return true;
                 }
             });
@@ -143,7 +147,7 @@ public class Homescreen extends SettingsActivity
             SwitchPreference dateUppercase = (SwitchPreference) findPreference(Utilities.DATE_STYLE_TRANSFORM);
             dateUppercase.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
-                    LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                    //LauncherAppState.getInstanceNoCreate().setNeedsRestart();
                     return true;
                 }
             });
@@ -154,7 +158,7 @@ public class Homescreen extends SettingsActivity
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
                     int index = dateSpacing.findIndexOfValue((String) newValue);
                     dateSpacing.setSummary(dateSpacing.getEntries()[index]);
-                    LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                    //LauncherAppState.getInstanceNoCreate().setNeedsRestart();
                     return true;
                 }
             });
@@ -184,7 +188,7 @@ public class Homescreen extends SettingsActivity
                         public boolean onPreferenceChange(Preference preference, Object newValue) {
                             int index = dateFormat.findIndexOfValue((String) newValue);
                             dateFormat.setSummary(dateFormat.getEntries()[index]);
-                            LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                            //LauncherAppState.getInstanceNoCreate().setNeedsRestart();
                             return true;
                         }
                     });
@@ -197,7 +201,7 @@ public class Homescreen extends SettingsActivity
                         public boolean onPreferenceChange(Preference preference, Object newValue) {
                             int index = dateFont.findIndexOfValue((String) newValue);
                             dateFont.setSummary(dateFont.getEntries()[index]);
-                            LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                            //LauncherAppState.getInstanceNoCreate().setNeedsRestart();
                             return true;
                         }
                     });

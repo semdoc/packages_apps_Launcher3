@@ -30,6 +30,7 @@ import android.content.SharedPreferences;
 import android.content.Intent;
 import android.os.Bundle;
 import android.content.pm.PackageManager;
+import android.os.Handler;
 import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.MenuItem;

@@ -76,8 +76,9 @@ public class SettingsActivity extends FragmentActivity
     private static final int DELAY_HIGHLIGHT_DURATION_MILLIS = 600;
     public static final String SAVE_HIGHLIGHTED_KEY = "android:preference_highlighted";
 
-    public static boolean restartNeeded = false;
     public static final String KEY_TRUST_APPS = "pref_trust_apps";
+
+    public static boolean restartNeeded = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
